@@ -27,9 +27,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
+def nums(*args):
+   return sum(args)
 
+# Ввод чисел через запятую
+numbers = map(int, input("Введите числа через запятую: ").split(','))
 
-
+print("Результат сложения:", nums(*numbers))
 
 
 
